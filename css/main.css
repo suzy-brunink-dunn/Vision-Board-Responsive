@@ -1,0 +1,140 @@
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    align-items: center;
+    background: #E8E8E8;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    justify-content: center;
+}
+
+p {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p span {
+    font-size: 2em;
+    color: lightcoral;
+}
+
+/* Basic Structure Styles */
+
+.vision-board {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Box Styles */
+
+.small-box {
+    height: 300px;
+}
+
+.big-box {
+    height: 400px;
+}
+
+.plain-box {
+    background-color:#fff; 
+}
+
+.image-box {
+    background-image: url("../img/background.png");  
+}
+
+.center-box {
+    background-color: #3B3B3B;
+}
+
+.center-box .box-contents {
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;    
+}
+
+.center-box .box-contents p,
+.center-box .box-contents h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.box-contents {
+    text-align: center;
+}
+
+strong {
+    background-color: #FFF44F;
+    padding: 5px 8px;
+}
+
+/* Tablet styles */
+
+@media all and (min-width: 768px) {
+    .box {
+        height: 350px;
+        width: 50%;
+    }
+
+    .center-box {
+        width: 100%;
+    }
+
+    .box-2 {
+        order: -1;
+    }
+
+    .box-8 {
+        order: 1;
+    } 
+}
+
+
+/*---------- Desktops ----------*/
+@media (min-width: 1200px) {
+    .box {
+        width: 33.3%;
+    }  
+    
+    .small-box {
+        height: 275px;
+    }
+
+    .big-box {
+        height: 450px;
+    }
+
+    .box-2 {
+        order: 0;
+    }
+
+    .box-8 {
+        order: 0;
+    }
+}
